@@ -1,0 +1,152 @@
+body {
+  background-color: #0C2340; /* Darker shade of blue */
+  color: #E0FFFF; /* Light blue text */
+  font-family: 'Gill Sans', sans-serif; /* Font family for all text */
+}
+
+.title {
+  font-family: 'Gill Sans', sans-serif;
+  text-align: center;
+  margin: 20px 0; /* Adjust margin as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 36px;
+}
+
+.headings {
+  font-family: 'Gill Sans', sans-serif;
+  margin: 15px 0; /* Adjust margin as needed */
+  padding: 8px; /* Adjust padding as needed */
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.button {
+  font-family: 'Gill Sans', sans-serif;
+  background-color: #0093AF; /* Button background color */
+  color: #E0FFFF; /* Button text color */
+  border: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 10px; /* Adjust margin as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  border-radius: 20px; /* Adjust border radius for curved edges */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.button:hover {
+  background-color: #00859B; /* Darker shade on hover */
+}
+.table-container {
+  border-radius: 10px; /* Curved edges */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.table th, .table td {
+  border: 1px solid #ccc; /* Greyish border color */
+  padding: 7px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #39CCCC; /* Button background color */
+  color: #001F3F; /* Text color same as the title */
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row color */
+  color: #000000; /* Black text color for table content */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White background color for odd rows */
+  color: #000000; /* Black text color for table content */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%; /* 20% for select, 75% for buttons */
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Adjust gap between items */
+}
+
+.select-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.select-container select {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+}
+
+.select-container select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.select-container::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666666;
+}
+
+.button-container {
+  width: 75%; /* Adjust width as needed */
+  display: flex;
+  justify-content: space-evenly; /* Distribute buttons evenly */
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+.drop-container {
+  width: 100%;
+  position: relative; 
+}
+
+.drop-container select {
+  width: 20%;
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  outline: none; /* Moved */
+}
+
+.drop-container select:focus {
+  border-color: #007bff;
+}
+
+.drop-container::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666666;
+}
+
